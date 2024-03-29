@@ -22,17 +22,17 @@ class MainApp extends StatelessWidget {
       Container(
         height: 200,
         width: 200,
-       decoration: const BoxDecoration(
+        decoration: const BoxDecoration(
         shape: BoxShape.circle,
-      gradient: LinearGradient(
-        colors: Colors.black,
-        stops: [10],
-        end: Alignment.bottomCenter,
-        begin: Alignment.topCenter,
-      ),
+        gradient: LinearGradient(
+          begin: Alignment.centerLeft,
+          end: Alignment.centerRight,
+          stops: [0.5,0],
+          colors: [Colors.green,Colors.blue],   
         ),
+        ),
+        )
       )
-    )
     ),
   );
   }
